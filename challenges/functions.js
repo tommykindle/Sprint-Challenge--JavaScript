@@ -19,14 +19,14 @@ divideNums(50, 5, (divisionOfTwoNums) => {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 function consume(x, y, cb) {
-  cb(x, y);
+  return cb(x, y);
 }
-function add(x, y, ) {
+function add(x, y,) {
   return x + y;
 }
 
 
-function multiply(x, y, ) {
+function multiply(x, y,) {
   return x * y;
 }
 
@@ -34,9 +34,9 @@ function greeting(firstname, lastname) {
   return `Hello ${firstname} ${lastname}, nice to meet you!`
 }
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2, 2, add); // 4
-consume(10, 16, multiply); // 160
-consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
